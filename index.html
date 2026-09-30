@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>이름 | 포트폴리오</title>
+  <meta name="description" content="백엔드 개발자 이름의 포트폴리오">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <style>
+    :root {
+      --ink: #1f2937;
+      --muted: #6b7280;
+      --faint: #9ca3af;
+      --line: #e5e7eb;
+      --card: rgba(255, 255, 255, 0.85);
+      --bg: #ffffff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Pretendard", "Malgun Gothic", sans-serif;
+      color: var(--ink);
+      background-color: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: inherit; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+
+    /* 상단 */
+    header { padding: 120px 0 80px; }
+    .eyebrow { font-size: 14px; letter-spacing: 0.2em; color: var(--faint); }
+    h1 { font-size: clamp(40px, 7vw, 64px); font-weight: 800; margin: 8px 0 12px; }
+    .role { font-size: 20px; color: var(--muted); }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .btn {
+      display: inline-block; padding: 10px 18px; border: 1px solid var(--line);
+      border-radius: 8px; background: var(--card); text-decoration: none; font-size: 15px;
+    }
+    .btn:hover { border-color: var(--ink); }
+
+    /* 섹션 */
+    section { padding: 48px 0; }
+    h2 { font-size: 28px; font-weight: 700; margin-bottom: 24px; }
+    h2 small { display: block; font-size: 13px; letter-spacing: 0.2em; color: var(--faint); font-weight: 400; }
+    .box {
+      border: 1px dashed #d1d5db; border-radius: 12px; background: var(--card);
+      padding: 24px; color: var(--muted);
+    }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+    /* 프로젝트 */
+    .projects { display: grid; gap: 16px; }
+    .project {
+      border: 1px solid var(--line); border-radius: 12px; background: var(--card); padding: 28px;
+    }
+    .project .no { font-size: 14px; color: var(--faint); font-weight: 700; }
+    .project h3 { font-size: 24px; margin: 4px 0; }
+    .project .sub { color: var(--muted); }
+    .project .meta { margin-top: 12px; font-size: 14px; color: var(--faint); }
+    .project .links { margin-top: 20px; }
+
+    footer { padding: 64px 0 80px; color: var(--faint); font-size: 14px; }
+
+    @media (max-width: 640px) {
+      header { padding: 72px 0 48px; }
+      .grid2 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header>
+      <p class="eyebrow">PORTFOLIO</p>
+      <h1>이름</h1>
+      <p class="role">지원 직무 · 한 줄 소개</p>
+      <div class="links">
+        <a class="btn" href="#">GitHub</a>
+        <a class="btn" href="mailto:">이메일</a>
+        <a class="btn" href="#">포트폴리오 PDF</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2><small>ABOUT ME</small>자기소개</h2>
+      <div class="box">소개</div>
+    </section>
+
+    <section id="career">
+      <div class="grid2">
+        <div>
+          <h2><small>CAREER</small>학력 · 경력</h2>
+          <div class="box">학력 · 경력</div>
+        </div>
+        <div>
+          <h2><small>SKILLS</small>기술 스택</h2>
+          <div class="box">기술 스택</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2><small>PROJECTS</small>프로젝트</h2>
+      <div class="projects">
+
+        <article class="project">
+          <p class="no">01</p>
+          <h3>Layover</h3>
+          <p class="sub">대전 여행지 추천 서비스</p>
+          <p class="meta">기간 · 인원 · 풀스택 (프론트엔드 · 백엔드)</p>
+          <div class="links">
+            <a class="btn" href="#">랜딩 페이지</a>
+            <a class="btn" href="#">GitHub</a>
+            <a class="btn" href="#">시연 영상</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <p class="no">02</p>
+          <h3>Emour</h3>
+          <p class="sub">감정 분석 커플 채팅 서비스</p>
+          <p class="meta">기간 · 인원 · 인프라 · AI 모델</p>
+          <div class="links">
+            <a class="btn" href="#">랜딩 페이지</a>
+            <a class="btn" href="#">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <p class="no">03</p>
+          <h3>BetterBatter</h3>
+          <p class="sub">실시간 야구 경기 예측 배팅 서비스</p>
+          <p class="meta">기간 · 인원 · 백엔드 · 테스트 · 오류 수정 · 유지보수</p>
+          <div class="links">
+            <a class="btn" href="#">랜딩 페이지</a>
+            <a class="btn" href="#">GitHub</a>
+            <a class="btn" href="#">시연 영상</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <footer>© 2026 이름</footer>
+
+  </div>
+</body>
+</html>
