@@ -1,9 +1,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="images/readme-header-dark.svg">
-  <img src="images/readme-header-light.svg" width="100%" alt="윤선민 | 포트폴리오 — 백엔드 · 프론트엔드 개발자">
+  <img src="images/readme-header-light.svg" width="100%" alt="윤선민 | 자기소개 홈페이지 — 백엔드 · 프론트엔드 개발자">
 </picture>
-
-<h1 align="center">자기소개 홈페이지</h1>
 
 <p align="center">
   <a href="https://seonmin-s2.github.io/"><img src="https://img.shields.io/badge/Website-seonmin--s2.github.io-c2e59c?style=flat-square&labelColor=1f2937" alt="Website"></a>
@@ -11,7 +9,7 @@
   <a href="https://github.com/seonmin-S2"><img src="https://img.shields.io/badge/GitHub-seonmin--S2-8cc8f6?style=flat-square&labelColor=1f2937&logo=github&logoColor=white" alt="GitHub"></a>
 </p>
 
-윤선민의 자기소개 페이지입니다. 세 프로젝트(Layover · Emour · BetterBatter)로 연결하는 입구 역할을 합니다.
+프로젝트 소개를 위한 윤선민의 자기소개 페이지입니다.
 
 ## 📋 담겨 있는 내용
 
