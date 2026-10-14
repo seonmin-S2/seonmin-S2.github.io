@@ -108,12 +108,20 @@
     .projects { display: grid; gap: 16px; }
     .project {
       border: 1px solid var(--line); border-radius: 12px; background: var(--card); padding: 28px;
+      display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 28px; align-items: start;
     }
     .project .no { font-size: 14px; color: var(--faint); font-weight: 700; }
     .project h3 { font-size: 24px; margin: 4px 0; }
     .project .sub { color: var(--muted); }
-    .project .meta { margin-top: 12px; font-size: 14px; color: var(--faint); }
+    .project .meta { margin-top: 12px; font-size: 14px; color: var(--muted); }
     .project .links { margin-top: 20px; }
+    .project .summary { margin-top: 16px; word-break: keep-all; }
+    .facts {
+      display: grid; grid-template-columns: auto 1fr; gap: 6px 16px;
+      margin-top: 16px; font-size: 15px; word-break: keep-all;
+    }
+    .facts dt { color: var(--muted); font-weight: 600; white-space: nowrap; }
+    .photo-project { aspect-ratio: 16 / 10; }
 
     footer { padding: 64px 0 80px; color: var(--faint); font-size: 14px; }
 
@@ -121,6 +129,8 @@
       header { padding: 72px 0 48px; grid-template-columns: 1fr; gap: 32px; }
       .photo-profile { max-width: 200px; }
       .grid2 { grid-template-columns: 1fr; gap: 48px; }
+      .project { grid-template-columns: minmax(0, 1fr); padding: 22px; }
+      .photo-project { order: -1; }
     }
   </style>
 </head>
@@ -279,38 +289,75 @@
       <div class="projects">
 
         <article class="project">
-          <p class="no">01</p>
-          <h3>Layover</h3>
-          <p class="sub">대전 여행지 추천 서비스</p>
-          <p class="meta">기간 · 인원 · 풀스택 (프론트엔드 · 백엔드)</p>
-          <div class="links">
-            <a class="btn" href="#">랜딩 페이지</a>
-            <a class="btn" href="#">GitHub</a>
-            <a class="btn" href="#">시연 영상</a>
+          <div class="project-body">
+            <p class="no">01</p>
+            <h3>Layover</h3>
+            <p class="sub">대전 여행지 추천 서비스</p>
+            <p class="meta">2026.05 ~ 2026.09 (약 5개월) · 2명 · 풀스택 (프론트엔드 · 백엔드)</p>
+            <p class="summary">KTX 환승 대기 시간에 맞춘 대전 관광 코스 추천 + 스탬프·캐릭터 도감 웹 서비스</p>
+            <dl class="facts">
+              <dt>담당</dt>
+              <dd>백엔드 API 대부분, 프론트 연동·구조 개선</dd>
+              <dt>팀원 담당</dt>
+              <dd>AI 코스 생성 로직, 버스·TMap 연동, CI/CD·배포 인프라</dd>
+              <dt>구분</dt>
+              <dd>2026 관광데이터 활용 공모전 출품</dd>
+            </dl>
+            <div class="links">
+              <a class="btn" href="https://layover-frontend.pages.dev/">서비스 바로가기</a>
+              <a class="btn" href="https://github.com/yonheeee/Layover">GitHub · 프론트엔드</a>
+              <a class="btn" href="https://github.com/yonheeee/Layover_Backend">GitHub · 백엔드</a>
+            </div>
           </div>
+          <!-- Layover 사진(빈칸): 사진이 준비되면 아래 div 안에 <img src="images/layover.jpg" alt="Layover 서비스 화면"> 를 넣으세요. -->
+          <div class="photo photo-project"></div>
         </article>
 
         <article class="project">
-          <p class="no">02</p>
-          <h3>Emour</h3>
-          <p class="sub">감정 분석 커플 채팅 서비스</p>
-          <p class="meta">기간 · 인원 · 인프라 · AI 모델</p>
-          <div class="links">
-            <a class="btn" href="#">랜딩 페이지</a>
-            <a class="btn" href="#">GitHub</a>
+          <div class="project-body">
+            <p class="no">02</p>
+            <h3>Emour</h3>
+            <p class="sub">감정 분석 커플 채팅 서비스</p>
+            <p class="meta">2026.07.06 ~ 08.10 (5주) · 6명 · 인프라 · AI 서버</p>
+            <p class="summary">대화 속 감정을 읽어주는 커플 메신저 — 메시지 감정 15종 분석과 답장 말투 추천</p>
+            <dl class="facts">
+              <dt>담당</dt>
+              <dd>배포·CI/CD 구축, FastAPI 서버·답장 추천</dd>
+              <dt>팀원 담당</dt>
+              <dd>감정 분석 모델(KcELECTRA 파인튜닝), 백엔드 AI 호출, 프론트엔드</dd>
+              <dt>구분</dt>
+              <dd>SSAFY 15기 공통 프로젝트 · 현재 서버 종료, 랜딩 페이지 운영</dd>
+            </dl>
+            <div class="links">
+              <a class="btn" href="https://biainmaze0507-alt.github.io/emour-landing/">랜딩 페이지</a>
+            </div>
           </div>
+          <!-- Emour 사진(빈칸): 사진이 준비되면 아래 div 안에 <img src="images/emour.jpg" alt="Emour 서비스 화면"> 를 넣으세요. -->
+          <div class="photo photo-project"></div>
         </article>
 
         <article class="project">
-          <p class="no">03</p>
-          <h3>BetterBatter</h3>
-          <p class="sub">실시간 야구 경기 예측 배팅 서비스</p>
-          <p class="meta">기간 · 인원 · 백엔드 · 테스트 · 오류 수정 · 유지보수</p>
-          <div class="links">
-            <a class="btn" href="#">랜딩 페이지</a>
-            <a class="btn" href="#">GitHub</a>
-            <a class="btn" href="#">시연 영상</a>
+          <div class="project-body">
+            <p class="no">03</p>
+            <h3>BetterBatter</h3>
+            <p class="sub">실시간 야구 경기 예측 배팅 서비스</p>
+            <p class="meta">2026.08.18 ~ 09.29 (6주) · 6명 · 백엔드 · 테스트 · 오류 수정 · 유지보수</p>
+            <p class="summary">MLB 경기를 실시간으로 따라가며 예측 질문에 가상 포인트로 참여하는 예측 마켓 서비스</p>
+            <dl class="facts">
+              <dt>담당</dt>
+              <dd>경험치·알림 도메인, 오픈 전 결함 수정</dd>
+              <dt>팀원 담당</dt>
+              <dd>마켓 엔진·정산·온체인 기록, CI/CD·AWS 배포, 질문별 즉시 정산 전환</dd>
+              <dt>구분</dt>
+              <dd>SSAFY 15기 특화 프로젝트</dd>
+            </dl>
+            <div class="links">
+              <a class="btn" href="https://seonmin-s2.github.io/betterbatter_landing/">랜딩 페이지</a>
+              <a class="btn" href="https://seonmin-s2.github.io/betterbatter_landing/#film">시연 영상</a>
+            </div>
           </div>
+          <!-- BetterBatter 사진(빈칸): 사진이 준비되면 아래 div 안에 <img src="images/betterbatter.jpg" alt="BetterBatter 서비스 화면"> 를 넣으세요. -->
+          <div class="photo photo-project"></div>
         </article>
 
       </div>
