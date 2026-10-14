@@ -26,6 +26,9 @@ Emour와 BetterBatter의 저장소는 SSAFY 소유 GitLab에 있어 링크하지
 | 파일 | 설명 |
 | --- | --- |
 | `index.html` | 페이지 전체 (HTML + CSS + 만 나이 계산용 짧은 JS, 한 파일, 빌드 도구 없음) |
+| `og-image.png` | 링크를 공유할 때 뜨는 미리보기 이미지 (1200×630) |
+| `favicon.ico` | 브라우저 탭 아이콘 |
+| `apple-touch-icon.png` | 아이폰 홈 화면에 추가할 때 쓰는 아이콘 (180×180) |
 | `README.md` | 이 문서 |
 
 ## 로컬에서 보기
