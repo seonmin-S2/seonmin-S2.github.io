@@ -13,14 +13,14 @@
 
 윤선민의 자기소개 페이지입니다. 세 프로젝트(Layover · Emour · BetterBatter)로 연결하는 입구 역할을 합니다.
 
-## 담겨 있는 내용
+## 📋 담겨 있는 내용
 
 - **헤더** — 이름, 지원 직무(백엔드 · 프론트엔드), 나이(만 나이 자동 계산) · 이메일, GitHub 링크, 포트폴리오 PDF 버튼
 - **학력 · 경력** — 경력 타임라인과 자격 · 수상
 - **기술 스택** — Backend · DB · Cache · Infra · Frontend · AI · Tools
 - **프로젝트** — Layover, Emour, BetterBatter 카드 (기간 · 인원 · 담당 · 링크)
 
-## 기술 스택
+## 🛠️ 기술 스택
 
 | 분야 | 기술 |
 | --- | --- |
@@ -30,7 +30,7 @@
 | Frontend | ![Vue 3](https://img.shields.io/badge/Vue%203-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 | AI · Tools | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![OpenAI API](images/badges/openai-api.svg) ![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=flat-square&logo=claude&logoColor=white) ![Codex](images/badges/codex.svg) |
 
-## 프로젝트
+## 🚀 프로젝트
 
 | 프로젝트 | 소개 | 링크 |
 | --- | --- | --- |
@@ -40,7 +40,7 @@
 
 Emour와 BetterBatter의 저장소는 SSAFY 소유 GitLab에 있어 링크하지 않고, 랜딩 페이지만 연결했습니다.
 
-## 파일 구성
+## 🗂️ 파일 구성
 
 | 파일 | 설명 |
 | --- | --- |
@@ -54,15 +54,15 @@ Emour와 BetterBatter의 저장소는 SSAFY 소유 GitLab에 있어 링크하지
 | `images/badges/` | 기술 스택 배지 중 로고를 직접 넣은 5개 (로고 출처: Devicon·Lobe Icons — MIT License, MyBatis 공식 로고) |
 | `README.md` | 이 문서 |
 
-## 로컬에서 보기
+## 💻 로컬에서 보기
 
 `index.html`을 브라우저로 열면 됩니다. 글꼴(Pretendard)은 CDN에서 불러오므로 인터넷에 연결되어 있어야 같은 모양으로 보입니다.
 
-## 배포
+## 🌐 배포
 
 GitHub Pages로 배포합니다. 저장소의 Settings → Pages에서 `main` 브랜치의 `/ (root)`를 선택하면, `main`에 push할 때마다 반영됩니다.
 
-## 연락처
+## 📬 연락처
 
 ysm2520@naver.com · [github.com/seonmin-S2](https://github.com/seonmin-S2)
 
