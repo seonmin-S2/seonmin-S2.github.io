@@ -72,6 +72,29 @@
     .points strong { display: block; font-weight: 600; }
     .points span { display: block; margin-top: 2px; color: var(--muted); font-size: 15px; }
 
+    /* 학력 · 경력 */
+    .timeline { list-style: none; }
+    .timeline li { position: relative; padding: 0 0 20px 26px; word-break: keep-all; }
+    .timeline li::before {
+      content: ""; position: absolute; left: 0; top: 5px; width: 12px; height: 12px;
+      border: 2px solid var(--faint); border-radius: 50%; background: var(--bg);
+    }
+    .timeline li::after {
+      content: ""; position: absolute; left: 5px; top: 17px; bottom: -5px; width: 2px;
+      background: var(--line);
+    }
+    .timeline li:last-child { padding-bottom: 0; }
+    .timeline li:last-child::after { display: none; }
+    .when { display: block; font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; }
+    .what { display: block; font-weight: 600; }
+    .sub-label {
+      margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line);
+      font-size: 14px; font-weight: 600; color: var(--muted);
+    }
+    .records { list-style: none; margin-top: 12px; }
+    .records li { word-break: keep-all; }
+    .records li + li { margin-top: 14px; }
+
     .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 
     /* 프로젝트 */
@@ -147,7 +170,37 @@
       <div class="grid2">
         <div>
           <h2><small>CAREER</small>학력 · 경력</h2>
-          <div class="box">학력 · 경력</div>
+          <div class="card">
+            <ol class="timeline">
+              <li>
+                <span class="when">2026.01 ~ 2026.12</span>
+                <span class="what">SSAFY 15기 (수료 예정)</span>
+              </li>
+              <li>
+                <span class="when">2023.06 ~ 2024.10</span>
+                <span class="what">KB손해보험 영업</span>
+              </li>
+              <li>
+                <span class="when">2019.09 ~ 2023.03</span>
+                <span class="what">휴먼리소시아(일본) SE</span>
+              </li>
+              <li>
+                <span class="when">2019.02</span>
+                <span class="what">한밭대학교 정보통신공학과 졸업</span>
+              </li>
+            </ol>
+            <h3 class="sub-label">자격 · 수상</h3>
+            <ul class="records">
+              <li>
+                <span class="when">2021.12</span>
+                <span class="what">JLPT N1</span>
+              </li>
+              <li>
+                <span class="when">2026.06</span>
+                <span class="what">AI-금융소비자보호 아이디어 경진대회 장려상</span>
+              </li>
+            </ul>
+          </div>
         </div>
         <div>
           <h2><small>SKILLS</small>기술 스택</h2>
