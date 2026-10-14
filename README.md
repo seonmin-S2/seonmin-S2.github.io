@@ -53,6 +53,6 @@ GitHub Pages로 배포합니다. 저장소의 Settings → Pages에서 `main` �
 
 ## 연락처
 
-ss15.dj.ysm@gmail.com · [github.com/seonmin-S2](https://github.com/seonmin-S2)
+ysm2520@naver.com · [github.com/seonmin-S2](https://github.com/seonmin-S2)
 
 <img src="images/readme-footer.svg" width="100%" alt="">
