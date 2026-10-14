@@ -3,11 +3,15 @@
   <img src="images/readme-header-light.svg" width="100%" alt="윤선민 | 포트폴리오 — 백엔드 · 프론트엔드 개발자">
 </picture>
 
-# seonmin-S2.github.io
+<h1 align="center">자기소개 홈페이지</h1>
+
+<p align="center">
+  <a href="https://seonmin-s2.github.io/"><img src="https://img.shields.io/badge/Website-seonmin--s2.github.io-c2e59c?style=flat-square&labelColor=1f2937" alt="Website"></a>
+  <a href="mailto:ysm2520@naver.com"><img src="https://img.shields.io/badge/Email-ysm2520%40naver.com-93ccc8?style=flat-square&labelColor=1f2937&logo=naver&logoColor=white" alt="Email"></a>
+  <a href="https://github.com/seonmin-S2"><img src="https://img.shields.io/badge/GitHub-seonmin--S2-8cc8f6?style=flat-square&labelColor=1f2937&logo=github&logoColor=white" alt="GitHub"></a>
+</p>
 
 윤선민의 자기소개 페이지입니다. 세 프로젝트(Layover · Emour · BetterBatter)로 연결하는 입구 역할을 합니다.
-
-https://seonmin-s2.github.io/
 
 ## 담겨 있는 내용
 
