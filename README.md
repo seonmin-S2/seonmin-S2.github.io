@@ -30,13 +30,13 @@
 | Frontend | ![Vue 3](https://img.shields.io/badge/Vue%203-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 | AI · Tools | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![OpenAI API](images/badges/openai-api.svg) ![Claude Code](https://img.shields.io/badge/Claude%20Code-D97757?style=flat-square&logo=claude&logoColor=white) ![Codex](images/badges/codex.svg) |
 
-## 프로젝트 링크
+## 프로젝트
 
-| 프로젝트 | 링크 |
-| --- | --- |
-| Layover | [서비스](https://layover-frontend.pages.dev/) · [GitHub (프론트엔드)](https://github.com/yonheeee/Layover) · [GitHub (백엔드)](https://github.com/yonheeee/Layover_Backend) |
-| Emour | [랜딩 페이지](https://biainmaze0507-alt.github.io/emour-landing/) |
-| BetterBatter | [랜딩 페이지](https://seonmin-s2.github.io/betterbatter_landing/) · [시연 영상](https://seonmin-s2.github.io/betterbatter_landing/#film) |
+| 프로젝트 | 소개 | 링크 |
+| --- | --- | --- |
+| **Layover** | 대전 여행지 추천 서비스 · 공모전 출품작 | [![Service](https://img.shields.io/badge/Service-c2e59c?style=flat-square&logo=cloudflarepages&logoColor=1f2937)](https://layover-frontend.pages.dev/) [![GitHub Frontend](https://img.shields.io/badge/GitHub-Frontend-c2e59c?style=flat-square&labelColor=1f2937&logo=github&logoColor=white)](https://github.com/yonheeee/Layover) [![GitHub Backend](https://img.shields.io/badge/GitHub-Backend-c2e59c?style=flat-square&labelColor=1f2937&logo=github&logoColor=white)](https://github.com/yonheeee/Layover_Backend) |
+| **Emour** | 감정 분석 커플 채팅 서비스 · SSAFY 15기 공통 프로젝트 | [![Landing Page](https://img.shields.io/badge/Landing%20Page-93ccc8?style=flat-square)](https://biainmaze0507-alt.github.io/emour-landing/) |
+| **BetterBatter** | 실시간 야구 경기 예측 배팅 서비스 · SSAFY 15기 특화 프로젝트 | [![Landing Page](https://img.shields.io/badge/Landing%20Page-8cc8f6?style=flat-square)](https://seonmin-s2.github.io/betterbatter_landing/) [![Demo Video](https://img.shields.io/badge/Demo%20Video-8cc8f6?style=flat-square)](https://seonmin-s2.github.io/betterbatter_landing/#film) |
 
 Emour와 BetterBatter의 저장소는 SSAFY 소유 GitLab에 있어 링크하지 않고, 랜딩 페이지만 연결했습니다.
 
