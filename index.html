@@ -35,6 +35,11 @@
     .role { font-size: 20px; color: var(--muted); word-break: keep-all; }
     .role-title { display: block; color: var(--ink); font-weight: 600; }
     .role-tagline { display: block; margin-top: 6px; font-size: 17px; }
+    .profile { display: flex; flex-wrap: wrap; gap: 12px 36px; margin-top: 24px; }
+    .profile dt { font-size: 13px; color: var(--muted); }
+    .profile dd { font-weight: 600; }
+    .profile a { text-decoration: none; }
+    .profile a:hover { text-decoration: underline; }
     .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
     .btn {
       display: inline-block; padding: 10px 18px; border: 1px solid var(--line);
@@ -137,9 +142,13 @@
           <span class="role-title">백엔드 · 프론트엔드 개발자</span>
           <span class="role-tagline">기능을 만드는 것만큼, 실패했을 때의 동작을 먼저 정합니다</span>
         </p>
+        <dl class="profile">
+          <!-- 만 나이는 아래 스크립트가 time의 datetime 값으로 자동 계산합니다. 생일을 바꾸려면 datetime과 날짜 글자를 함께 고치세요. -->
+          <div><dt>나이</dt><dd><time id="birth" datetime="1996-02-12">1996.02.12</time> (만 <span id="age">30</span>세)</dd></div>
+          <div><dt>이메일</dt><dd><a href="mailto:ss15.dj.ysm@gmail.com">ss15.dj.ysm@gmail.com</a></dd></div>
+        </dl>
         <div class="links">
           <a class="btn" href="https://github.com/seonmin-S2">GitHub</a>
-          <a class="btn" href="mailto:ss15.dj.ysm@gmail.com">이메일</a>
           <!-- 포트폴리오 PDF: 아직 미제작(비워둠). 완성되면 href에 파일 경로(예: portfolio.pdf)를 넣고 class의 is-empty, aria-disabled, tabindex를 지우세요. -->
           <a class="btn is-empty" href="#" aria-disabled="true" tabindex="-1">포트폴리오 PDF</a>
         </div>
@@ -331,5 +340,20 @@
     <footer>© 2026 윤선민</footer>
 
   </div>
+
+  <script>
+    // 만 나이 = 올해 - 태어난 해, 단 올해 생일이 아직 안 지났으면 1을 뺀다
+    (function () {
+      var birth = document.getElementById('birth');
+      var out = document.getElementById('age');
+      if (!birth || !out) return;
+      var b = birth.getAttribute('datetime').split('-').map(Number); // [1996, 2, 12]
+      var now = new Date();
+      var age = now.getFullYear() - b[0];
+      var month = now.getMonth() + 1;
+      if (month < b[1] || (month === b[1] && now.getDate() < b[2])) age -= 1;
+      out.textContent = age;
+    })();
+  </script>
 </body>
 </html>
