@@ -6,8 +6,7 @@ https://seonmin-s2.github.io/
 
 ## 담겨 있는 내용
 
-- **헤더** — 이름, 지원 직무(백엔드 · 프론트엔드), GitHub · 이메일 링크, 포트폴리오 PDF 버튼
-- **자기소개** — 경력, 프로젝트, 설계 방식을 5가지로 요약
+- **헤더** — 이름, 지원 직무(백엔드 · 프론트엔드), 나이(만 나이 자동 계산) · 이메일, GitHub 링크, 포트폴리오 PDF 버튼
 - **학력 · 경력** — 경력 타임라인과 자격 · 수상
 - **기술 스택** — Backend · DB · Cache · Infra · Frontend · AI · Tools
 - **프로젝트** — Layover, Emour, BetterBatter 카드 (기간 · 인원 · 담당 · 링크)
@@ -26,7 +25,7 @@ Emour와 BetterBatter의 저장소는 SSAFY 소유 GitLab에 있어 링크하지
 
 | 파일 | 설명 |
 | --- | --- |
-| `index.html` | 페이지 전체 (HTML + CSS 한 파일, 빌드 도구 없음) |
+| `index.html` | 페이지 전체 (HTML + CSS + 만 나이 계산용 짧은 JS, 한 파일, 빌드 도구 없음) |
 | `README.md` | 이 문서 |
 
 ## 로컬에서 보기
