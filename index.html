@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>이름 | 포트폴리오</title>
-  <meta name="description" content="백엔드 개발자 이름의 포트폴리오">
+  <title>윤선민 | 포트폴리오</title>
+  <meta name="description" content="백엔드 · 프론트엔드 개발자 윤선민의 포트폴리오">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <style>
     :root {
@@ -26,16 +26,29 @@
     .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
 
     /* 상단 */
-    header { padding: 120px 0 80px; }
+    header {
+      padding: 120px 0 80px;
+      display: grid; grid-template-columns: 1fr 200px; gap: 48px; align-items: center;
+    }
     .eyebrow { font-size: 14px; letter-spacing: 0.2em; color: var(--faint); }
     h1 { font-size: clamp(40px, 7vw, 64px); font-weight: 800; margin: 8px 0 12px; }
-    .role { font-size: 20px; color: var(--muted); }
+    .role { font-size: 20px; color: var(--muted); word-break: keep-all; }
+    .role-title { display: block; color: var(--ink); font-weight: 600; }
+    .role-tagline { display: block; margin-top: 6px; font-size: 17px; }
     .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
     .btn {
       display: inline-block; padding: 10px 18px; border: 1px solid var(--line);
       border-radius: 8px; background: var(--card); text-decoration: none; font-size: 15px;
     }
     .btn:hover { border-color: var(--ink); }
+    .btn.is-empty { opacity: 0.45; pointer-events: none; }
+
+    /* 사진 칸 — 사진이 없을 때는 빈칸으로 보입니다 */
+    .photo {
+      aspect-ratio: 3 / 4; border: 1px dashed #d1d5db; border-radius: 12px;
+      background: #f9fafb; overflow: hidden;
+    }
+    .photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
     /* 섹션 */
     section { padding: 48px 0; }
@@ -61,7 +74,8 @@
     footer { padding: 64px 0 80px; color: var(--faint); font-size: 14px; }
 
     @media (max-width: 640px) {
-      header { padding: 72px 0 48px; }
+      header { padding: 72px 0 48px; grid-template-columns: 1fr; gap: 32px; }
+      .photo-profile { max-width: 200px; }
       .grid2 { grid-template-columns: 1fr; }
     }
   </style>
@@ -70,14 +84,22 @@
   <div class="wrap">
 
     <header>
-      <p class="eyebrow">PORTFOLIO</p>
-      <h1>이름</h1>
-      <p class="role">지원 직무 · 한 줄 소개</p>
-      <div class="links">
-        <a class="btn" href="#">GitHub</a>
-        <a class="btn" href="mailto:">이메일</a>
-        <a class="btn" href="#">포트폴리오 PDF</a>
+      <div class="hero-text">
+        <p class="eyebrow">PORTFOLIO</p>
+        <h1>윤선민</h1>
+        <p class="role">
+          <span class="role-title">백엔드 · 프론트엔드 개발자</span>
+          <span class="role-tagline">기능을 만드는 것만큼, 실패했을 때의 동작을 먼저 정합니다</span>
+        </p>
+        <div class="links">
+          <a class="btn" href="https://github.com/seonmin-S2">GitHub</a>
+          <a class="btn" href="mailto:ss15.dj.ysm@gmail.com">이메일</a>
+          <!-- 포트폴리오 PDF: 아직 미제작(비워둠). 완성되면 href에 파일 경로(예: portfolio.pdf)를 넣고 class의 is-empty, aria-disabled, tabindex를 지우세요. -->
+          <a class="btn is-empty" href="#" aria-disabled="true" tabindex="-1">포트폴리오 PDF</a>
+        </div>
       </div>
+      <!-- 프로필 사진(빈칸): 사진이 준비되면 아래 div 안에 <img src="images/profile.jpg" alt="윤선민 프로필 사진"> 를 넣으세요. -->
+      <div class="photo photo-profile"></div>
     </header>
 
     <section id="about">
@@ -140,7 +162,7 @@
       </div>
     </section>
 
-    <footer>© 2026 이름</footer>
+    <footer>© 2026 윤선민</footer>
 
   </div>
 </body>
