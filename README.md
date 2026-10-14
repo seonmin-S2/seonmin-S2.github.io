@@ -48,7 +48,8 @@ Emour와 BetterBatter의 저장소는 SSAFY 소유 GitLab에 있어 링크하지
 | `images/apple-touch-icon.png` | 아이폰 홈 화면에 추가할 때 쓰는 아이콘 (180×180) |
 | `images/readme-header-light.svg` | README 맨 위 배너 (라이트 모드) |
 | `images/readme-header-dark.svg` | README 맨 위 배너 (다크 모드) |
-| `images/readme-footer.svg` | README 맨 아래 물결 배너 |
+| `images/readme-footer.svg` | README 맨 아래 물결 배너 (라이트 모드) |
+| `images/readme-footer-dark.svg` | README 맨 아래 물결 배너 (다크 모드) |
 | `images/badges/` | 기술 스택 배지 중 로고를 직접 넣은 5개 (로고 출처: Devicon·Lobe Icons — MIT License, MyBatis 공식 로고) |
 | `README.md` | 이 문서 |
 
@@ -64,4 +65,7 @@ GitHub Pages로 배포합니다. 저장소의 Settings → Pages에서 `main` �
 
 ysm2520@naver.com · [github.com/seonmin-S2](https://github.com/seonmin-S2)
 
-<img src="images/readme-footer.svg" width="100%" alt="">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="images/readme-footer-dark.svg">
+  <img src="images/readme-footer.svg" width="100%" alt="">
+</picture>
