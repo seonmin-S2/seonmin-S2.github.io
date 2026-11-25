@@ -16,7 +16,7 @@
 - **헤더** — 이름, 지원 직무(백엔드 · 프론트엔드), 나이(만 나이 자동 계산) · 이메일, GitHub 링크, 포트폴리오 PDF 버튼
 - **학력 · 경력** — 경력 타임라인과 자격 · 수상
 - **기술 스택** — Backend · DB · Cache · Infra · Frontend · AI · Tools
-- **프로젝트** — Layover, Emour, BetterBatter 카드 (기간 · 인원 · 담당 · 링크)
+- **프로젝트** — Layover, Emour, BetterBatter, Jobis 카드 (기간 · 인원 · 담당 · 링크)
 
 ## 🛠️ 기술 스택
 
@@ -35,8 +35,9 @@
 | **Layover** | 대전 여행지 추천 서비스 · 공모전 출품작 | <a href="https://layover-frontend.pages.dev/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Service-457036?style=flat-square&logo=cloudflarepages&logoColor=white"><img src="https://img.shields.io/badge/Service-c2e59c?style=flat-square&logo=cloudflarepages&logoColor=1f2937" alt="Service"></picture></a> <a href="https://github.com/yonheeee/Layover"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/GitHub-Frontend-457036?style=flat-square&labelColor=374151&logo=github&logoColor=white"><img src="https://img.shields.io/badge/GitHub-Frontend-c2e59c?style=flat-square&labelColor=1f2937&logo=github&logoColor=white" alt="GitHub Frontend"></picture></a> <a href="https://github.com/yonheeee/Layover_Backend"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/GitHub-Backend-457036?style=flat-square&labelColor=374151&logo=github&logoColor=white"><img src="https://img.shields.io/badge/GitHub-Backend-c2e59c?style=flat-square&labelColor=1f2937&logo=github&logoColor=white" alt="GitHub Backend"></picture></a> |
 | **Emour** | 감정 분석 커플 채팅 서비스 · SSAFY 15기 공통 프로젝트 | <a href="https://biainmaze0507-alt.github.io/emour-landing/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Landing%20Page-376e6b?style=flat-square"><img src="https://img.shields.io/badge/Landing%20Page-93ccc8?style=flat-square" alt="Landing Page"></picture></a> |
 | **BetterBatter** | 실시간 야구 경기 예측 배팅 서비스 · SSAFY 15기 특화 프로젝트 | <a href="https://seonmin-s2.github.io/betterbatter_landing/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Landing%20Page-2e6992?style=flat-square"><img src="https://img.shields.io/badge/Landing%20Page-8cc8f6?style=flat-square" alt="Landing Page"></picture></a> <a href="https://seonmin-s2.github.io/betterbatter_landing/#film"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Demo%20Video-2e6992?style=flat-square"><img src="https://img.shields.io/badge/Demo%20Video-8cc8f6?style=flat-square" alt="Demo Video"></picture></a> |
+| **Jobis** | AI 자소서 올인원 서비스 · SSAFY 15기 자율 프로젝트 | <a href="https://seonmin-s2.github.io/jobis-landing/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/Landing%20Page-685796?style=flat-square"><img src="https://img.shields.io/badge/Landing%20Page-c1b5ea?style=flat-square" alt="Landing Page"></picture></a> |
 
-Emour와 BetterBatter의 저장소는 SSAFY 소유 GitLab에 있어 링크하지 않고, 랜딩 페이지만 연결했습니다.
+Emour, BetterBatter, Jobis의 저장소는 SSAFY 소유 GitLab에 있어 링크하지 않고, 랜딩 페이지만 연결했습니다.
 
 ## 🗂️ 파일 구성
 
